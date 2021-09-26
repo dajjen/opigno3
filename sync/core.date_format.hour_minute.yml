@@ -1,0 +1,10 @@
+uuid: 9621e853-9fdc-4fac-8087-93012bede175
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: wLoUFJyHGjRxLc4WrnbTgWJf5XklRTw-FkM_HS56zao
+id: hour_minute
+label: 'Hour and minute'
+locked: false
+pattern: 'H\h:i'

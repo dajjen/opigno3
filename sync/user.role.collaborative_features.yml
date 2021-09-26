@@ -1,0 +1,15 @@
+uuid: 65ddd2c5-349b-4a4e-be09-6dfde7b29ec2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Ni0QQX_IIJXR6xNIf43KY-t6-QuqG6-msq1-oGIIdGc
+id: collaborative_features
+label: 'Live meeting manager'
+weight: -8
+is_admin: null
+permissions:
+  - 'add workspace entities'
+  - 'start meeting'
+  - 'view meeting entities'
+  - 'view workspace entities'

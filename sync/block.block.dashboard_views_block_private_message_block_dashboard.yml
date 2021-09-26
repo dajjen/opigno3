@@ -1,0 +1,32 @@
+uuid: 8078e52e-393b-442a-9bd8-7eddba029132
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.private_message
+  module:
+    - system
+    - views
+  theme:
+    - aristotle
+_core:
+  default_config_hash: 3GA8xgdMtIX6YZesa-1Bjx7S4SNf0dHGFzWERWhvkc4
+id: dashboard_views_block_private_message_block_dashboard
+theme: aristotle
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:private_message-block_dashboard'
+settings:
+  id: 'views_block:private_message-block_dashboard'
+  label: 'Dashboard: Private Message: Dashboard - Last Threads'
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

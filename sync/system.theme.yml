@@ -1,0 +1,4 @@
+default: aristotle
+admin: aristotle
+_core:
+  default_config_hash: e6uhdB02cLXcp7vQrWSQBh0fNWrRLNyGcDDRzJbP3sc

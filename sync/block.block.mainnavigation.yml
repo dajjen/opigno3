@@ -1,0 +1,27 @@
+uuid: fce4438d-81db-49d4-b5d6-1a7495528066
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - aristotle
+_core:
+  default_config_hash: jUhbsQMQ1TsVf-lixdJHuVfQMGdsgVbPqIyb0OlixZk
+id: mainnavigation
+theme: aristotle
+region: menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

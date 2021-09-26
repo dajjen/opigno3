@@ -1,0 +1,30 @@
+uuid: 26948fcc-cd05-4035-aa32-76fb6a230394
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.latest_active_trainings
+  module:
+    - system
+    - views
+  theme:
+    - aristotle
+id: dashboard_views_block_latest_active_trainings_block
+theme: aristotle
+region: help
+weight: 0
+provider: null
+plugin: 'views_block:latest_active_trainings-block'
+settings:
+  id: 'views_block:latest_active_trainings-block'
+  label: 'Dashboard: Latest active trainings'
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

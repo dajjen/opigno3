@@ -1,0 +1,26 @@
+uuid: d41787f3-eb02-4a86-9f4e-f9af107624f8
+langcode: en
+status: false
+dependencies:
+  module:
+    - opigno_social
+    - system
+  theme:
+    - aristotle
+id: dashboard_opigno_social_wall_block
+theme: aristotle
+region: help
+weight: 0
+provider: null
+plugin: opigno_social_wall_block
+settings:
+  id: opigno_social_wall_block
+  label: 'Dashboard: Social wall'
+  provider: opigno_social
+  label_display: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

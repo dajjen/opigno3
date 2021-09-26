@@ -1,0 +1,30 @@
+uuid: 4fd9550c-661b-4d3b-9700-c7cc1f1831b4
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.opigno_group_members
+  module:
+    - system
+    - views
+  theme:
+    - aristotle
+id: dashboard_views_block_opigno_group_members_block_pending
+theme: aristotle
+region: help
+weight: 0
+provider: null
+plugin: 'views_block:opigno_group_members-block_pending'
+settings:
+  id: 'views_block:opigno_group_members-block_pending'
+  label: 'Dashboard: Opigno Group Members: Pending Memberships'
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

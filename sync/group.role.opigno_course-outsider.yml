@@ -1,0 +1,16 @@
+uuid: 5a6adee8-0c5a-4069-a42b-6bea56f0f3c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.opigno_course
+_core:
+  default_config_hash: 7newsQw66ATqKDKstCl2lb4Sk76nYeE6m1ZGCXG2w94
+id: opigno_course-outsider
+label: Outsider
+weight: -101
+internal: true
+audience: outsider
+group_type: opigno_course
+permissions_ui: true
+permissions: {  }

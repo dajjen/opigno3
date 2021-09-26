@@ -1,0 +1,12 @@
+uuid: c69d579e-622c-4505-96df-19a7f1cd2f78
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: dP2M1rDcpNyZODjf5gDKlFo0CqBDaQBJe-kRwo24i6w
+id: media.embedded_display
+label: 'Embedded display'
+targetEntityType: media
+cache: true

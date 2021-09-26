@@ -1,0 +1,30 @@
+uuid: e5fda352-cf13-4d1a-a6bc-a246fd1125c4
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.opigno_calendar
+  module:
+    - system
+    - views
+  theme:
+    - aristotle
+id: dashboard_views_block_opigno_calendar_month_block
+theme: aristotle
+region: help
+weight: 0
+provider: null
+plugin: 'views_block:opigno_calendar-month_block'
+settings:
+  id: 'views_block:opigno_calendar-month_block'
+  label: 'Dashboard: Opigno calendar block'
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

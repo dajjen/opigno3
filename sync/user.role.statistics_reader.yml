@@ -1,0 +1,16 @@
+uuid: 19e2f5a2-88e6-45ca-b84a-80d7cba673f7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: eK9nGeLabTfm6KOJPu0z0Nzdh3ub7vuNORltKWnXpO0
+id: statistics_reader
+label: 'Statistics manager'
+weight: -7
+is_admin: null
+permissions:
+  - 'opigno dashboard layout access'
+  - 'view any group statistics'
+  - 'view any user statistics'
+  - 'view global statistics'
+  - 'view module results'

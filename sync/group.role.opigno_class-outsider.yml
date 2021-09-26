@@ -1,0 +1,18 @@
+uuid: 989a3c54-b00a-47d2-bcd3-d38e06e2f04b
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.opigno_class
+_core:
+  default_config_hash: hnhdeEt9sDHzipkBX3g2KMvVHUfuuZpYNbnY6jUx5q0
+id: opigno_class-outsider
+label: Outsider
+weight: -101
+internal: true
+audience: outsider
+group_type: opigno_class
+permissions_ui: true
+permissions:
+  - 'join group'
+  - 'view group'

@@ -1,0 +1,12 @@
+uuid: 2f28f074-c45f-4232-b2ae-588b13afc0c3
+langcode: en
+status: true
+dependencies:
+  module:
+    - opigno_learning_path
+_core:
+  default_config_hash: 5_PHSjJbNKRy5uD4Tdr5yoCRRL4wlGOgCSR4VDYBGpg
+id: learning_path_link.token
+label: Token
+targetEntityType: learning_path_link
+cache: true

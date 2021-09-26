@@ -1,0 +1,20 @@
+uuid: bec4544b-7960-4a04-9c1e-ea9be6badba4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Anonymous user'
+weight: -10
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'opigno dashboard layout access'
+  - 'restful post color_rest_resource'
+  - 'search content'
+  - 'take modules'
+  - 'use text format restricted_html'
+  - 'view media'
