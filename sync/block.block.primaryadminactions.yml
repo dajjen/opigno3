@@ -1,4 +1,3 @@
-uuid: 8a0da3bd-57ab-40d8-a227-c8a4582a1fe1
 langcode: en
 status: true
 dependencies:
@@ -6,8 +5,6 @@ dependencies:
     - system
   theme:
     - aristotle
-_core:
-  default_config_hash: gq6g6ghO0FLfB7uqZU4gpf6JuVQx8eCYdNZn8mdD6Ds
 id: primaryadminactions
 theme: aristotle
 region: content
@@ -22,6 +19,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/catalogue\r\n/group/classes"
+    pages: /catalogue
     negate: true
     context_mapping: {  }

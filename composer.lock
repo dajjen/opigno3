@@ -1009,17 +1009,17 @@
         },
         {
             "name": "drupal/aristotle",
-            "version": "3.0.0-beta2",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/aristotle.git",
-                "reference": "3.0.0-beta2"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/aristotle-3.0.0-beta2.zip",
-                "reference": "3.0.0-beta2",
-                "shasum": "3993c1f29c0d7f59113ca597d80e1608a1847ac5"
+                "url": "https://ftp.drupal.org/files/projects/aristotle-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "153d4aa6177f74b112a9a1e6a525b1846420f5dd"
             },
             "require": {
                 "drupal/core": "^9"
@@ -1027,8 +1027,8 @@
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta2",
-                    "datestamp": "1631904668",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632496330",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -1363,30 +1363,33 @@
         },
         {
             "name": "drupal/commerce",
-            "version": "2.20.0",
+            "version": "2.27.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/commerce.git",
-                "reference": "8.x-2.20"
+                "reference": "8.x-2.27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/commerce-8.x-2.20.zip",
-                "reference": "8.x-2.20",
-                "shasum": "ef187586d1752acf624a750613bd0ae55a7f4f4e"
+                "url": "https://ftp.drupal.org/files/projects/commerce-8.x-2.27.zip",
+                "reference": "8.x-2.27",
+                "shasum": "0dcbcd5c00c662bfc38e075e782bef731a620991"
             },
             "require": {
                 "commerceguys/intl": "^1.0.0",
                 "drupal/address": "^1.7",
-                "drupal/core": "^8.8 || ^9",
-                "drupal/entity": "^1.0-rc2",
+                "drupal/core": "^8.9 || ^9",
+                "drupal/entity": "^1.0",
                 "drupal/entity_reference_revisions": "~1.0",
                 "drupal/inline_entity_form": "^1.0-rc6",
-                "drupal/profile": "^1.0",
-                "drupal/state_machine": "^1.0-rc1",
-                "drupal/token": "^1.0",
+                "drupal/profile": "^1.2",
+                "drupal/state_machine": "^1.4",
+                "drupal/token": "^1.7",
                 "ext-bcmath": "*",
-                "php": ">=7.0.8"
+                "php": ">=7.1"
+            },
+            "conflict": {
+                "drupal/commerce_shipping": "<2.1"
             },
             "require-dev": {
                 "drupal/commerce_cart": "*",
@@ -1396,6 +1399,7 @@
                 "drupal/commerce_price": "*",
                 "drupal/commerce_product": "*",
                 "drupal/commerce_store": "*",
+                "drupal/entity_print": "^2.2",
                 "drupal/entity_reference_revisions": "*",
                 "drupal/mailsystem": "^4.3",
                 "drupal/profile": "*",
@@ -1404,8 +1408,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.20",
-                    "datestamp": "1593196157",
+                    "version": "8.x-2.27",
+                    "datestamp": "1632333931",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1446,7 +1450,7 @@
         },
         {
             "name": "drupal/commerce_cart",
-            "version": "2.26.0",
+            "version": "2.27.0",
             "require": {
                 "drupal/commerce": "*",
                 "drupal/commerce_order": "*",
@@ -1456,8 +1460,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.26",
-                    "datestamp": "1628088727",
+                    "version": "8.x-2.27",
+                    "datestamp": "1632333931",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1498,7 +1502,7 @@
         },
         {
             "name": "drupal/commerce_checkout",
-            "version": "2.26.0",
+            "version": "2.27.0",
             "require": {
                 "drupal/commerce": "*",
                 "drupal/commerce_cart": "*",
@@ -1508,8 +1512,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.26",
-                    "datestamp": "1628088727",
+                    "version": "8.x-2.27",
+                    "datestamp": "1632333931",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1550,7 +1554,7 @@
         },
         {
             "name": "drupal/commerce_log",
-            "version": "2.26.0",
+            "version": "2.27.0",
             "require": {
                 "drupal/commerce": "*",
                 "drupal/core": "^8.9 || ^9"
@@ -1558,8 +1562,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.26",
-                    "datestamp": "1628088727",
+                    "version": "8.x-2.27",
+                    "datestamp": "1632333931",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1600,7 +1604,7 @@
         },
         {
             "name": "drupal/commerce_number_pattern",
-            "version": "2.26.0",
+            "version": "2.27.0",
             "require": {
                 "drupal/commerce": "*",
                 "drupal/commerce_store": "*",
@@ -1609,8 +1613,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.26",
-                    "datestamp": "1628088727",
+                    "version": "8.x-2.27",
+                    "datestamp": "1632333931",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1651,7 +1655,7 @@
         },
         {
             "name": "drupal/commerce_order",
-            "version": "2.26.0",
+            "version": "2.27.0",
             "require": {
                 "drupal/commerce": "*",
                 "drupal/commerce_number_pattern": "*",
@@ -1665,8 +1669,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.26",
-                    "datestamp": "1628088727",
+                    "version": "8.x-2.27",
+                    "datestamp": "1632333931",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1707,7 +1711,7 @@
         },
         {
             "name": "drupal/commerce_payment",
-            "version": "2.26.0",
+            "version": "2.27.0",
             "require": {
                 "drupal/commerce": "*",
                 "drupal/commerce_order": "*",
@@ -1717,8 +1721,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.26",
-                    "datestamp": "1628088727",
+                    "version": "8.x-2.27",
+                    "datestamp": "1632333931",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1759,7 +1763,7 @@
         },
         {
             "name": "drupal/commerce_price",
-            "version": "2.26.0",
+            "version": "2.27.0",
             "require": {
                 "drupal/commerce": "*",
                 "drupal/core": "^8.9 || ^9"
@@ -1767,8 +1771,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.26",
-                    "datestamp": "1628088727",
+                    "version": "8.x-2.27",
+                    "datestamp": "1632333931",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1809,7 +1813,7 @@
         },
         {
             "name": "drupal/commerce_product",
-            "version": "2.26.0",
+            "version": "2.27.0",
             "require": {
                 "drupal/commerce": "*",
                 "drupal/commerce_price": "*",
@@ -1819,8 +1823,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.26",
-                    "datestamp": "1628088727",
+                    "version": "8.x-2.27",
+                    "datestamp": "1632333931",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1861,7 +1865,7 @@
         },
         {
             "name": "drupal/commerce_store",
-            "version": "2.26.0",
+            "version": "2.27.0",
             "require": {
                 "drupal/commerce": "*",
                 "drupal/commerce_price": "*",
@@ -1870,8 +1874,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.26",
-                    "datestamp": "1628088727",
+                    "version": "8.x-2.27",
+                    "datestamp": "1632333931",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4258,7 +4262,7 @@
         },
         {
             "name": "drupal/opigno_alter_entity_autocomplete",
-            "version": "3.0.0-beta3",
+            "version": "3.0.0-rc1",
             "require": {
                 "drupal/core": "^9",
                 "drupal/opigno_learning_path": "^3"
@@ -4266,11 +4270,11 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta3",
-                    "datestamp": "1631904188",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632496750",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -4304,17 +4308,17 @@
         },
         {
             "name": "drupal/opigno_calendar",
-            "version": "3.0.0-beta1",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/opigno_calendar.git",
-                "reference": "3.0.0-beta1"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/opigno_calendar-3.0.0-beta1.zip",
-                "reference": "3.0.0-beta1",
-                "shasum": "7db052c26202698a5112fe23e1bc4ec2023da867"
+                "url": "https://ftp.drupal.org/files/projects/opigno_calendar-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "8ca50a908889e75d113f0e4a5e66e118282b9bce"
             },
             "require": {
                 "drupal/core": "^9",
@@ -4325,11 +4329,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta1",
-                    "datestamp": "1631308694",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632496387",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -4363,17 +4367,17 @@
         },
         {
             "name": "drupal/opigno_calendar_event",
-            "version": "3.0.0-beta1",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/opigno_calendar_event.git",
-                "reference": "3.0.0-beta1"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/opigno_calendar_event-3.0.0-beta1.zip",
-                "reference": "3.0.0-beta1",
-                "shasum": "56284023ed2378e83f3eb44a0ad9c41647c29470"
+                "url": "https://ftp.drupal.org/files/projects/opigno_calendar_event-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "a745e3e013302b6ff7883b905c9c607872ab7a2b"
             },
             "require": {
                 "drupal/calendar": "*",
@@ -4387,11 +4391,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta1",
-                    "datestamp": "1631309056",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632496431",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -4425,17 +4429,17 @@
         },
         {
             "name": "drupal/opigno_catalog",
-            "version": "3.0.0-beta1",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/opigno_catalog.git",
-                "reference": "3.0.0-beta1"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/opigno_catalog-3.0.0-beta1.zip",
-                "reference": "3.0.0-beta1",
-                "shasum": "29d4425f9d81c96d135edb67d01babdbf4d7a11b"
+                "url": "https://ftp.drupal.org/files/projects/opigno_catalog-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "df5241f7fd09e247cc67d931b87bdabc43bd590a"
             },
             "require": {
                 "drupal/core": "^9",
@@ -4445,11 +4449,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta1",
-                    "datestamp": "1631309116",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632496457",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -4483,17 +4487,17 @@
         },
         {
             "name": "drupal/opigno_certificate",
-            "version": "3.0.0-beta2",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/opigno_certificate.git",
-                "reference": "3.0.0-beta2"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/opigno_certificate-3.0.0-beta2.zip",
-                "reference": "3.0.0-beta2",
-                "shasum": "b0e2c8e4f9764069ee04ef595c36556ed1234c08"
+                "url": "https://ftp.drupal.org/files/projects/opigno_certificate-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "16d31290843991d371d2377c2f0b6c51532ee2b8"
             },
             "require": {
                 "drupal/ckeditor_bgimage": "*",
@@ -4504,11 +4508,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta2",
-                    "datestamp": "1631903561",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632496489",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -4542,17 +4546,17 @@
         },
         {
             "name": "drupal/opigno_class",
-            "version": "3.0.0-beta1",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/opigno_class.git",
-                "reference": "3.0.0-beta1"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/opigno_class-3.0.0-beta1.zip",
-                "reference": "3.0.0-beta1",
-                "shasum": "83262084aba37e1e06ba75b3c4c53e90e23cc052"
+                "url": "https://ftp.drupal.org/files/projects/opigno_class-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "20a3091d24b470cb1c0f1a337b0983d8635fabd6"
             },
             "require": {
                 "drupal/config_rewrite": "*",
@@ -4563,11 +4567,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta1",
-                    "datestamp": "1631309186",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632496530",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -4601,17 +4605,17 @@
         },
         {
             "name": "drupal/opigno_commerce",
-            "version": "3.0.0-beta1",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/opigno_commerce.git",
-                "reference": "3.0.0-beta1"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/opigno_commerce-3.0.0-beta1.zip",
-                "reference": "3.0.0-beta1",
-                "shasum": "6ce7057de2e6b7dbb9f8ed15fbbd141081d54529"
+                "url": "https://ftp.drupal.org/files/projects/opigno_commerce-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "23010d0022e4495650607d805ee78546857265b9"
             },
             "require": {
                 "drupal/commerce": "*",
@@ -4629,11 +4633,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta1",
-                    "datestamp": "1631309226",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632496584",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -4667,17 +4671,17 @@
         },
         {
             "name": "drupal/opigno_course",
-            "version": "3.0.0-beta1",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/opigno_course.git",
-                "reference": "3.0.0-beta1"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/opigno_course-3.0.0-beta1.zip",
-                "reference": "3.0.0-beta1",
-                "shasum": "f214ca6652d9e57b159398f5d665c80edc9f212e"
+                "url": "https://ftp.drupal.org/files/projects/opigno_course-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "2896e50aceb6fada9b2863433c537a2f5ca7b7fb"
             },
             "require": {
                 "drupal/core": "^9",
@@ -4689,11 +4693,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta1",
-                    "datestamp": "1631309265",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632496602",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -4727,17 +4731,17 @@
         },
         {
             "name": "drupal/opigno_cron",
-            "version": "3.0.0-beta1",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/opigno_cron.git",
-                "reference": "3.0.0-beta1"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/opigno_cron-3.0.0-beta1.zip",
-                "reference": "3.0.0-beta1",
-                "shasum": "b5a1727fa6e18fda1d8a068d84ac64977e8a32f5"
+                "url": "https://ftp.drupal.org/files/projects/opigno_cron-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "2a591c0ef6532a77a271423f0206cb60be188c56"
             },
             "require": {
                 "drupal/config_rewrite": "*",
@@ -4748,11 +4752,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta1",
-                    "datestamp": "1631309306",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632496626",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -4786,17 +4790,17 @@
         },
         {
             "name": "drupal/opigno_dashboard",
-            "version": "3.0.0-beta2",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/opigno_dashboard.git",
-                "reference": "3.0.0-beta2"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/opigno_dashboard-3.0.0-beta2.zip",
-                "reference": "3.0.0-beta2",
-                "shasum": "67b2e7ea83e1ad8b0c1b8c0c27fb29826101ec38"
+                "url": "https://ftp.drupal.org/files/projects/opigno_dashboard-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "7ede31ec45f8f575febe176d361bf7fe5d8f2d9f"
             },
             "require": {
                 "drupal/core": "^9",
@@ -4805,11 +4809,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta2",
-                    "datestamp": "1631903726",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632496645",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -4847,17 +4851,17 @@
         },
         {
             "name": "drupal/opigno_forum",
-            "version": "3.0.0-beta1",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/opigno_forum.git",
-                "reference": "3.0.0-beta1"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/opigno_forum-3.0.0-beta1.zip",
-                "reference": "3.0.0-beta1",
-                "shasum": "f8bbf921c332ab447845a7f2efbb224193d29544"
+                "url": "https://ftp.drupal.org/files/projects/opigno_forum-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "67e2f28c0fb7884c0501d9a6da469966de3fcefc"
             },
             "require": {
                 "drupal/core": "^9",
@@ -4868,11 +4872,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta1",
-                    "datestamp": "1631309396",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632496676",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -4906,17 +4910,17 @@
         },
         {
             "name": "drupal/opigno_group_manager",
-            "version": "3.0.0-beta2",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/opigno_group_manager.git",
-                "reference": "3.0.0-beta2"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/opigno_group_manager-3.0.0-beta2.zip",
-                "reference": "3.0.0-beta2",
-                "shasum": "ba9a0e3b506f3c5318097a8bb7860c3b81f5d1f1"
+                "url": "https://ftp.drupal.org/files/projects/opigno_group_manager-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "80bdd94da333d609459f18a3226a972e065b0c01"
             },
             "require": {
                 "drupal/core": "^9",
@@ -4925,11 +4929,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta2",
-                    "datestamp": "1631903921",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632496703",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -4963,17 +4967,17 @@
         },
         {
             "name": "drupal/opigno_ilt",
-            "version": "3.0.0-beta2",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/opigno_ilt.git",
-                "reference": "3.0.0-beta2"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/opigno_ilt-3.0.0-beta2.zip",
-                "reference": "3.0.0-beta2",
-                "shasum": "5f266eec3702aba552c86b978aa762b4913390d6"
+                "url": "https://ftp.drupal.org/files/projects/opigno_ilt-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "b82558d1430166cc3fa004785b08c0ce11c5f46b"
             },
             "require": {
                 "drupal/core": "^9",
@@ -4985,11 +4989,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta2",
-                    "datestamp": "1631613934",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632496725",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -5023,17 +5027,17 @@
         },
         {
             "name": "drupal/opigno_learning_path",
-            "version": "3.0.0-beta3",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/opigno_learning_path.git",
-                "reference": "3.0.0-beta3"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/opigno_learning_path-3.0.0-beta3.zip",
-                "reference": "3.0.0-beta3",
-                "shasum": "227cfad54e2214ea99f9ab01c021f85a4504f0c7"
+                "url": "https://ftp.drupal.org/files/projects/opigno_learning_path-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "4ffe4bbc344f9f13cfa72238cbd49eb153b39da2"
             },
             "require": {
                 "drupal/better_exposed_filters": "*",
@@ -5058,11 +5062,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta3",
-                    "datestamp": "1631904188",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632496750",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -5096,17 +5100,17 @@
         },
         {
             "name": "drupal/opigno_like",
-            "version": "3.0.0-beta1",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/opigno_like.git",
-                "reference": "3.0.0-beta1"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/opigno_like-3.0.0-beta1.zip",
-                "reference": "3.0.0-beta1",
-                "shasum": "bb584a6a50ae6d0c509ff24f65c1d27826d65370"
+                "url": "https://ftp.drupal.org/files/projects/opigno_like-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "d4ef8d2ffd1f2615cac827e0de34fae527021c84"
             },
             "require": {
                 "drupal/core": "^9"
@@ -5114,8 +5118,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta1",
-                    "datestamp": "1631309545",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632496775",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -5152,17 +5156,17 @@
         },
         {
             "name": "drupal/opigno_messaging",
-            "version": "3.0.0-beta2",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/opigno_messaging.git",
-                "reference": "3.0.0-beta2"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/opigno_messaging-3.0.0-beta2.zip",
-                "reference": "3.0.0-beta2",
-                "shasum": "d9a78d0d4380eeb1d6c86964c2468fd9ca9880b8"
+                "url": "https://ftp.drupal.org/files/projects/opigno_messaging-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "82008fd6c4aea49de5dae2175c748c98026fb802"
             },
             "require": {
                 "drupal/core": "^9",
@@ -5173,11 +5177,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta2",
-                    "datestamp": "1631904306",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632496819",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -5211,17 +5215,17 @@
         },
         {
             "name": "drupal/opigno_migration",
-            "version": "3.0.0-beta1",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/opigno_migration.git",
-                "reference": "3.0.0-beta1"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/opigno_migration-3.0.0-beta1.zip",
-                "reference": "3.0.0-beta1",
-                "shasum": "5ef5a0157f5e90b91d7838b8dae5368d284d0f63"
+                "url": "https://ftp.drupal.org/files/projects/opigno_migration-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "38184db90c9b639e2b2386a9fe1bf3b34fe8ecee"
             },
             "require": {
                 "drupal/core": "^9",
@@ -5231,11 +5235,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta1",
-                    "datestamp": "1631309620",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632496849",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -5269,17 +5273,17 @@
         },
         {
             "name": "drupal/opigno_mobile_app",
-            "version": "3.0.0-beta1",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/opigno_mobile_app.git",
-                "reference": "3.0.0-beta1"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/opigno_mobile_app-3.0.0-beta1.zip",
-                "reference": "3.0.0-beta1",
-                "shasum": "9f2504a5bc604efdd523846592caf349ddae1a32"
+                "url": "https://ftp.drupal.org/files/projects/opigno_mobile_app-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "e8c3fde83510fcf7a479f674a753b01a12c6442f"
             },
             "require": {
                 "drupal/core": "^9",
@@ -5295,11 +5299,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta1",
-                    "datestamp": "1631309661",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632496901",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -5333,17 +5337,17 @@
         },
         {
             "name": "drupal/opigno_module",
-            "version": "3.0.0-beta2",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/opigno_module.git",
-                "reference": "3.0.0-beta2"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/opigno_module-3.0.0-beta2.zip",
-                "reference": "3.0.0-beta2",
-                "shasum": "b31870f6c52e3efc67fd3457a9146d581fc6673e"
+                "url": "https://ftp.drupal.org/files/projects/opigno_module-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "df4dec276c111b33c68acc489c24dea39bbe6c5c"
             },
             "require": {
                 "drupal/core": "^9",
@@ -5361,11 +5365,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta2",
-                    "datestamp": "1631613809",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632496937",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -5399,7 +5403,7 @@
         },
         {
             "name": "drupal/opigno_module_group",
-            "version": "3.0.0-beta2",
+            "version": "3.0.0-rc1",
             "require": {
                 "drupal/core": "^9",
                 "drupal/opigno_module": "^3"
@@ -5407,11 +5411,11 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta2",
-                    "datestamp": "1631613809",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632496937",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -5445,17 +5449,17 @@
         },
         {
             "name": "drupal/opigno_moxtra",
-            "version": "3.0.0-beta3",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/opigno_moxtra.git",
-                "reference": "3.0.0-beta3"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/opigno_moxtra-3.0.0-beta3.zip",
-                "reference": "3.0.0-beta3",
-                "shasum": "da056d0030b8b45c26e9dcc932d16f479af8efa2"
+                "url": "https://ftp.drupal.org/files/projects/opigno_moxtra-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "785a3c0232189f2e56a9b6f0c8e76dc44cbf9456"
             },
             "require": {
                 "drupal/core": "^9",
@@ -5472,11 +5476,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta3",
-                    "datestamp": "1631904402",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632496976",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -5510,17 +5514,17 @@
         },
         {
             "name": "drupal/opigno_notification",
-            "version": "3.0.0-beta1",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/opigno_notification.git",
-                "reference": "3.0.0-beta1"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/opigno_notification-3.0.0-beta1.zip",
-                "reference": "3.0.0-beta1",
-                "shasum": "babb076f83602c36907d0a2d38f913422be0f8b0"
+                "url": "https://ftp.drupal.org/files/projects/opigno_notification-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "353bcf669025b7613786d96d5ad8a3a04d84a955"
             },
             "require": {
                 "drupal/core": "^9"
@@ -5528,11 +5532,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta1",
-                    "datestamp": "1631309776",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632497016",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -5566,17 +5570,17 @@
         },
         {
             "name": "drupal/opigno_scorm",
-            "version": "3.0.0-beta1",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/opigno_scorm.git",
-                "reference": "3.0.0-beta1"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/opigno_scorm-3.0.0-beta1.zip",
-                "reference": "3.0.0-beta1",
-                "shasum": "80bedf67ed071f85839cffc538cdf73d2de41646"
+                "url": "https://ftp.drupal.org/files/projects/opigno_scorm-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "eb473eb6ac293a7c14cc0259064b105b9bb143f4"
             },
             "require": {
                 "drupal/core": "^9"
@@ -5584,11 +5588,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta1",
-                    "datestamp": "1631309820",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632497049",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -5622,17 +5626,17 @@
         },
         {
             "name": "drupal/opigno_search",
-            "version": "3.0.0-beta1",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/opigno_search.git",
-                "reference": "3.0.0-beta1"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/opigno_search-3.0.0-beta1.zip",
-                "reference": "3.0.0-beta1",
-                "shasum": "c2aecf149f636e1d6f5101d504ab4e764f52c115"
+                "url": "https://ftp.drupal.org/files/projects/opigno_search-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "7cffa0c358d882e179d1e9702bea86e14fb463f4"
             },
             "require": {
                 "drupal/config_rewrite": "*",
@@ -5643,11 +5647,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta1",
-                    "datestamp": "1631309865",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632497086",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -5681,17 +5685,17 @@
         },
         {
             "name": "drupal/opigno_social",
-            "version": "3.0.0-beta1",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/opigno_social.git",
-                "reference": "3.0.0-beta1"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/opigno_social-3.0.0-beta1.zip",
-                "reference": "3.0.0-beta1",
-                "shasum": "3e626be13522d9a97f1f25bd6d3c199e1dc32e43"
+                "url": "https://ftp.drupal.org/files/projects/opigno_social-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "03b05b3cf2d06d851e4230c172ebf37123f59b82"
             },
             "require": {
                 "drupal/core": "^9",
@@ -5702,8 +5706,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta1",
-                    "datestamp": "1631309912",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632497120",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -5740,17 +5744,17 @@
         },
         {
             "name": "drupal/opigno_statistics",
-            "version": "3.0.0-beta2",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/opigno_statistics.git",
-                "reference": "3.0.0-beta2"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/opigno_statistics-3.0.0-beta2.zip",
-                "reference": "3.0.0-beta2",
-                "shasum": "bd6fd25c300ff95e0e121dd80e6a27cabd6c2a3d"
+                "url": "https://ftp.drupal.org/files/projects/opigno_statistics-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "7bbc15e60ae177cf8fb61cacdc134157a3eea865"
             },
             "require": {
                 "drupal/core": "^9",
@@ -5762,11 +5766,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta2",
-                    "datestamp": "1631904507",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632497145",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -5800,17 +5804,17 @@
         },
         {
             "name": "drupal/opigno_tincan_api",
-            "version": "3.0.0-beta1",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/opigno_tincan_api.git",
-                "reference": "3.0.0-beta1"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/opigno_tincan_api-3.0.0-beta1.zip",
-                "reference": "3.0.0-beta1",
-                "shasum": "36b44ffc9f28a80cb26be56b1cca5f207b6a5079"
+                "url": "https://ftp.drupal.org/files/projects/opigno_tincan_api-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "a1a1ac4123c25815d79c68151d8b9dee08c61a06"
             },
             "require": {
                 "drupal/core": "^9"
@@ -5827,11 +5831,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta1",
-                    "datestamp": "1631310023",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632497176",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -5869,17 +5873,17 @@
         },
         {
             "name": "drupal/opigno_tour",
-            "version": "3.0.0-beta1",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/opigno_tour.git",
-                "reference": "3.0.0-beta1"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/opigno_tour-3.0.0-beta1.zip",
-                "reference": "3.0.0-beta1",
-                "shasum": "c5fb0d226b56cb13af43bfa9b825d5a99c1eb1d4"
+                "url": "https://ftp.drupal.org/files/projects/opigno_tour-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "ebcfd20d7a547b8823f0c55223c07bf02ea4942f"
             },
             "require": {
                 "drupal/core": "^9"
@@ -5887,11 +5891,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta1",
-                    "datestamp": "1631310073",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632497201",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -5913,6 +5917,10 @@
                     "homepage": "https://www.drupal.org/user/479234"
                 },
                 {
+                    "name": "vshamov",
+                    "homepage": "https://www.drupal.org/user/3689794"
+                },
+                {
                     "name": "yuriy.korzhov",
                     "homepage": "https://www.drupal.org/user/3477971"
                 }
@@ -5925,7 +5933,7 @@
         },
         {
             "name": "drupal/opigno_user_selection",
-            "version": "3.0.0-beta3",
+            "version": "3.0.0-rc1",
             "require": {
                 "drupal/core": "^9",
                 "drupal/opigno_learning_path": "^3"
@@ -5933,11 +5941,11 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta3",
-                    "datestamp": "1631904188",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632496750",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -6158,30 +6166,30 @@
         },
         {
             "name": "drupal/profile",
-            "version": "1.1.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/profile.git",
-                "reference": "8.x-1.1"
+                "reference": "8.x-1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/profile-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "b8f6aca4f432228e614dca0a50cb187e936e4825"
+                "url": "https://ftp.drupal.org/files/projects/profile-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "e2f0b76ae0cfb312259a956f7140cec261e543b1"
             },
             "require": {
-                "drupal/core": "^8.7.7 || ^9",
+                "drupal/core": "^8.8 || ^9",
                 "drupal/entity": "^1.0-rc2"
             },
             "require-dev": {
-                "drupal/token": "^1.0"
+                "drupal/token": "^1.7"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1582134004",
+                    "version": "8.x-1.3",
+                    "datestamp": "1628099894",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6190,7 +6198,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -6672,17 +6680,17 @@
         },
         {
             "name": "drupal/tft",
-            "version": "3.0.0-beta1",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/tft.git",
-                "reference": "3.0.0-beta1"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/tft-3.0.0-beta1.zip",
-                "reference": "3.0.0-beta1",
-                "shasum": "fcbc4985cc307ea0eed4c6419d3c32727f62f69c"
+                "url": "https://ftp.drupal.org/files/projects/tft-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "bbf17748fd0387c7d39300b13da131a18688c503"
             },
             "require": {
                 "drupal/core": "^9",
@@ -6691,11 +6699,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta1",
-                    "datestamp": "1631310115",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1632497237",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -6835,10 +6843,6 @@
             ],
             "authors": [
                 {
-                    "name": "Darvanen",
-                    "homepage": "https://www.drupal.org/user/1068770"
-                },
-                {
                     "name": "Dave Reid",
                     "homepage": "https://www.drupal.org/user/53892"
                 },
@@ -6853,6 +6857,10 @@
                 {
                     "name": "asciikewl",
                     "homepage": "https://www.drupal.org/user/147292"
+                },
+                {
+                    "name": "darvanen",
+                    "homepage": "https://www.drupal.org/user/1068770"
                 },
                 {
                     "name": "pescetti",
@@ -8133,16 +8141,16 @@
         },
         {
             "name": "opigno/opigno_lms",
-            "version": "3.0.0-beta3",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/opigno/opigno_lms.git",
-                "reference": "deca566c560f3cd2457e7fd54e3c9c8766b381f8"
+                "reference": "1177814f394398f485fd5a648af86c558ac25058"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/opigno/opigno_lms/get/deca566c560f3cd2457e7fd54e3c9c8766b381f8.zip",
-                "reference": "deca566c560f3cd2457e7fd54e3c9c8766b381f8",
+                "url": "https://bitbucket.org/opigno/opigno_lms/get/1177814f394398f485fd5a648af86c558ac25058.zip",
+                "reference": "1177814f394398f485fd5a648af86c558ac25058",
                 "shasum": ""
             },
             "require": {
@@ -8150,12 +8158,12 @@
                 "dompdf/dompdf": "0.8.5",
                 "drupal/address": "1.9",
                 "drupal/admin_toolbar": "2.4",
-                "drupal/aristotle": "^3.0@beta",
+                "drupal/aristotle": "^3.0@rc",
                 "drupal/better_exposed_filters": "5.0-beta3",
                 "drupal/calendar": "1.0-alpha4",
                 "drupal/ckeditor_bgimage": "2.0.0",
                 "drupal/ckeditor_font": "1.x-dev",
-                "drupal/commerce": "2.20",
+                "drupal/commerce": "2.27",
                 "drupal/config_rewrite": "1.4",
                 "drupal/core-recommended": "9.2.*",
                 "drupal/ctools": "3.7",
@@ -8179,42 +8187,42 @@
                 "drupal/migrate_plus": "5.1",
                 "drupal/migrate_tools": "5.0",
                 "drupal/mimemail": "1.0.0-alpha3",
-                "drupal/opigno_calendar": "^3.0@beta",
-                "drupal/opigno_calendar_event": "^3.0@beta",
-                "drupal/opigno_catalog": "^3.0@beta",
-                "drupal/opigno_certificate": "^3.0@beta",
-                "drupal/opigno_class": "^3.0@beta",
-                "drupal/opigno_commerce": "^3.0@beta",
-                "drupal/opigno_course": "^3.0@beta",
-                "drupal/opigno_cron": "^3.0@beta",
-                "drupal/opigno_dashboard": "^3.0@beta",
-                "drupal/opigno_forum": "^3.0@beta",
-                "drupal/opigno_group_manager": "^3.0@beta",
-                "drupal/opigno_ilt": "^3.0@beta",
-                "drupal/opigno_learning_path": "^3.0@beta",
-                "drupal/opigno_like": "^3.0@beta",
-                "drupal/opigno_messaging": "^3.0@beta",
-                "drupal/opigno_migration": "^3.0@beta",
-                "drupal/opigno_mobile_app": "^3.0@beta",
-                "drupal/opigno_module": "^3.0@beta",
-                "drupal/opigno_moxtra": "^3.0@beta",
-                "drupal/opigno_notification": "^3.0@beta",
-                "drupal/opigno_scorm": "^3.0@beta",
-                "drupal/opigno_search": "^3.0@beta",
-                "drupal/opigno_social": "^3.0@beta",
-                "drupal/opigno_statistics": "^3.0@beta",
-                "drupal/opigno_tincan_api": "^3.0@beta",
-                "drupal/opigno_tour": "^3.0@beta",
+                "drupal/opigno_calendar": "^3.0@rc",
+                "drupal/opigno_calendar_event": "^3.0@rc",
+                "drupal/opigno_catalog": "^3.0@rc",
+                "drupal/opigno_certificate": "^3.0@rc",
+                "drupal/opigno_class": "^3.0@rc",
+                "drupal/opigno_commerce": "^3.0@rc",
+                "drupal/opigno_course": "^3.0@rc",
+                "drupal/opigno_cron": "^3.0@rc",
+                "drupal/opigno_dashboard": "^3.0@rc",
+                "drupal/opigno_forum": "^3.0@rc",
+                "drupal/opigno_group_manager": "^3.0@rc",
+                "drupal/opigno_ilt": "^3.0@rc",
+                "drupal/opigno_learning_path": "^3.0@rc",
+                "drupal/opigno_like": "^3.0@rc",
+                "drupal/opigno_messaging": "^3.0@rc",
+                "drupal/opigno_migration": "^3.0@rc",
+                "drupal/opigno_mobile_app": "^3.0@rc",
+                "drupal/opigno_module": "^3.0@rc",
+                "drupal/opigno_moxtra": "^3.0@rc",
+                "drupal/opigno_notification": "^3.0@rc",
+                "drupal/opigno_scorm": "^3.0@rc",
+                "drupal/opigno_search": "^3.0@rc",
+                "drupal/opigno_social": "^3.0@rc",
+                "drupal/opigno_statistics": "^3.0@rc",
+                "drupal/opigno_tincan_api": "^3.0@rc",
+                "drupal/opigno_tour": "^3.0@rc",
                 "drupal/pdf": "1.x-dev#1e33fbf",
                 "drupal/popup_field_group": "1.6",
-                "drupal/profile": "1.1",
+                "drupal/profile": "1.3",
                 "drupal/queue_ui": "2.2.0",
                 "drupal/restui": "1.20.0",
                 "drupal/role_delegation": "1.1",
                 "drupal/search_api": "1.20",
                 "drupal/simple_gmap": "3.0.1",
                 "drupal/state_machine": "1.5",
-                "drupal/tft": "^3.0@beta",
+                "drupal/tft": "^3.0@rc",
                 "drupal/token": "1.9",
                 "drupal/token_filter": "1.2",
                 "drupal/twig_field_value": "2",
@@ -8280,13 +8288,11 @@
                     },
                     "drupal/private_message": {
                         "UPDB fix": "https://www.drupal.org/files/issues/2021-09-10/opigno_private_messages_fix-3232402-1.patch",
-                        "Missing text format: basic_html": "https://www.drupal.org/files/issues/2020-03-23/basic_html_to_plain_text-3121606-2.patch"
+                        "Missing text format: basic_html": "https://www.drupal.org/files/issues/2020-03-23/basic_html_to_plain_text-3121606-2.patch",
+                        "Inbox not updated when empty": "https://www.drupal.org/files/issues/2019-11-25/private-message-inbox-when-empty-3095676-5.patch"
                     },
                     "drupal/field_group": {
                         "Undefined property: stdClass::$region in field_group_form_process()": "https://www.drupal.org/files/issues/2020-06-15/3059614-37.patch"
-                    },
-                    "drupal/ulyimate_cron": {
-                        "Automated Drupal 9 compatibility fixes": "https://www.drupal.org/files/issues/2020-09-13/3148488-3.patch"
                     },
                     "drupal/calendar": {
                         "Ajax pager": "https://www.drupal.org/files/issues/2021-07-20/calendar-block-ajax-pager-3224497-2.patch",
@@ -8307,9 +8313,9 @@
             "description": "Opigno LMS profile",
             "homepage": "https://bitbucket.org/opigno/opigno_lms",
             "support": {
-                "source": "https://bitbucket.org/opigno/opigno_lms/src/deca566c560f3cd2457e7fd54e3c9c8766b381f8/?at=3.0.0-beta3"
+                "source": "https://bitbucket.org/opigno/opigno_lms/src/1177814f394398f485fd5a648af86c558ac25058/?at=3.0.0-rc1"
             },
-            "time": "2021-09-17T19:16:19+00:00"
+            "time": "2021-09-24T15:54:48+00:00"
         },
         {
             "name": "pear/archive_tar",
@@ -12429,16 +12435,16 @@
         },
         {
             "name": "consolidation/site-alias",
-            "version": "3.1.0",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/site-alias.git",
-                "reference": "9ed3c590be9fcf9fea69c73456c2fd4b27f5204c"
+                "reference": "e824b57253d9174f4a500f87e6d0e1e497c2a50a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/site-alias/zipball/9ed3c590be9fcf9fea69c73456c2fd4b27f5204c",
-                "reference": "9ed3c590be9fcf9fea69c73456c2fd4b27f5204c",
+                "url": "https://api.github.com/repos/consolidation/site-alias/zipball/e824b57253d9174f4a500f87e6d0e1e497c2a50a",
+                "reference": "e824b57253d9174f4a500f87e6d0e1e497c2a50a",
                 "shasum": ""
             },
             "require": {
@@ -12481,9 +12487,9 @@
             "description": "Manage alias records for local and remote sites.",
             "support": {
                 "issues": "https://github.com/consolidation/site-alias/issues",
-                "source": "https://github.com/consolidation/site-alias/tree/3.1.0"
+                "source": "https://github.com/consolidation/site-alias/tree/3.1.1"
             },
-            "time": "2021-02-20T20:03:10+00:00"
+            "time": "2021-09-21T00:30:48+00:00"
         },
         {
             "name": "consolidation/site-process",

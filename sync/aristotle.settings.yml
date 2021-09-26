@@ -29,3 +29,4 @@ browser_sync: 0
 logo_path2: themes/contrib/aristotle/assets/Logo-Opigno-3-dark.svg
 _core:
   default_config_hash: VW5XHxINL1cMDv9DMbLD60Zos0P1BYKQdPWn0q4jgBA
+logo_path_anonymous: Logo-Opigno-3-dark.svg

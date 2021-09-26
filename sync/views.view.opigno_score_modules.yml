@@ -1,12 +1,9 @@
-uuid: 33aea40f-c19c-46ce-b84f-3b0eb65cfbfc
 langcode: en
 status: true
 dependencies:
   module:
     - opigno_module
     - user
-_core:
-  default_config_hash: 8wv2lPv4ivDT68RjcF50l_PnlxdUkMpYiJSLyOP9htI
 id: opigno_score_modules
 label: 'Opigno Score Modules'
 module: views
@@ -569,7 +566,7 @@ display:
           entity_type: opigno_module
           entity_field: name
           plugin_id: standard
-      title: 'Score Modules'
+      title: 'Score activity'
       header: {  }
       footer: {  }
       empty:

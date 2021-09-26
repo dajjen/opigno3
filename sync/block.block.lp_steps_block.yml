@@ -1,4 +1,3 @@
-uuid: a21ec2d4-a5a8-45de-a619-3d0c72074792
 langcode: en
 status: true
 dependencies:
@@ -7,8 +6,6 @@ dependencies:
     - system
   theme:
     - aristotle
-_core:
-  default_config_hash: JuOJKKg4jTPWNHbS1Yr3dT9g7kHDiJeAlYzy2P09f1A
 id: lp_steps_block
 theme: aristotle
 region: sidebar_first
